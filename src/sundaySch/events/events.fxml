@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1335.0" stylesheets="@events.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sundaySch.events.EventsController">
+   <center>
+      <JFXTreeTableView fx:id="treeview" prefHeight="760.0" prefWidth="996.0" stylesheets="@events.css" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+         <columnResizePolicy>
+            <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy></JFXTreeTableView>
+   </center>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Separator layoutX="7.0" layoutY="349.0" prefHeight="5.0" prefWidth="295.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher's Form" wrappingWidth="99.13671875">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="searchTxt" focusColor="#009688" labelFloat="true" layoutX="133.0" layoutY="41.0" prefHeight="25.0" prefWidth="155.0" promptText="Enter item for search" />
+            <JFXTextField fx:id="eventName" focusColor="#009688" labelFloat="true" layoutX="8.0" layoutY="116.0" prefHeight="25.0" prefWidth="134.0" promptText="Event Name" />
+            <JFXDatePicker fx:id="eventDate" layoutX="9.0" layoutY="172.0" prefHeight="28.0" prefWidth="146.0" promptText="Date" />
+            <JFXTextField fx:id="venueTxt" focusColor="#009688" labelFloat="true" layoutX="160.0" layoutY="116.0" prefHeight="25.0" prefWidth="132.0" promptText="Venue" />
+            <JFXButton fx:id="saveButton" layoutX="15.0" layoutY="297.0" onAction="#saveButton" prefHeight="41.0" prefWidth="64.0" stylesheets="@events.css" text="Save" />
+            <Separator layoutX="11.0" layoutY="86.0" prefHeight="5.0" prefWidth="295.0" />
+            <Text layoutX="24.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" wrappingWidth="50.13671875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="82.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/search.png" />
+               </image>
+            </ImageView>
+            <ProgressIndicator fx:id="prog" layoutX="132.0" layoutY="357.0" prefHeight="50.0" prefWidth="56.0" progress="0.0" />
+            <JFXTimePicker fx:id="eventTime" layoutX="179.0" layoutY="172.0" prefHeight="28.0" prefWidth="119.0" promptText="Time" />
+            <JFXTextField fx:id="eventDescription" focusColor="#009688" labelFloat="true" layoutX="10.0" layoutY="234.0" prefHeight="25.0" prefWidth="282.0" promptText="Event Description" />
+            <JFXButton fx:id="deleteButton" layoutX="157.0" layoutY="297.0" onAction="#deleteButton" prefHeight="41.0" prefWidth="64.0" stylesheets="@events.css" text="Delete" />
+            <JFXButton fx:id="clearButton" layoutX="228.0" layoutY="297.0" onAction="#clearButton" prefHeight="41.0" prefWidth="64.0" stylesheets="@events.css" text="Clear" />
+            <JFXButton fx:id="editButton" layoutX="86.0" layoutY="297.0" onAction="#editButton" prefHeight="41.0" prefWidth="64.0" stylesheets="@events.css" text="Edit" />
+         </children>
+      </AnchorPane>
+   </right>
+   <top>
+      <MenuBar prefHeight="34.0" prefWidth="1335.0" style="-fx-background-color: #009688;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

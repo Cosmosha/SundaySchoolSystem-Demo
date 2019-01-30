@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="579.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sundaySch.systemInfo.SystemInfoController">
+   <children>
+      <Circle fill="#b6bcc200" layoutX="267.0" layoutY="167.0" radius="82.0" stroke="#838282" strokeType="INSIDE" strokeWidth="5.0" />
+      <ImageView fx:id="image" fitHeight="180.0" fitWidth="187.0" layoutX="177.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/imageedit_1_7537750162.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="193.0" layoutY="34.0" prefHeight="20.0" prefWidth="164.0" text="Sunday School System">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="110.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This project serves to wipe out the challenge of storing and recording data by providing snappy help for sunday school administrators in solving data collection problems. In conclusion, this application only focus on accepting and storing of records or data for future use." textAlignment="JUSTIFY" wrappingWidth="330.1367228627205">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="110.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This application is purposely developed to aid in managing the children's ministry and therefore" textAlignment="CENTER" wrappingWidth="330.1367228627205">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Label layoutX="226.0" layoutY="446.0" prefHeight="20.0" prefWidth="101.0" text="NOT FOR SALE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="160.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed by: " textAlignment="CENTER" wrappingWidth="108.13672286272049">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="261.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cosmos Hagan" textAlignment="CENTER" wrappingWidth="108.13672286272049">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="249.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+233547840784" textAlignment="CENTER" wrappingWidth="101.13671983359382">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="170.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Info Call:" textAlignment="CENTER" wrappingWidth="79.99999751150608">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

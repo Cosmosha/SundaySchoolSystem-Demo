@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="VBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.94" prefHeight="419.0" prefWidth="219.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sundaySch.DashBoard.SlideMenuController">
+   <children>
+      <Pane opacity="0.9" prefHeight="331.0" prefWidth="197.0">
+         <children>
+            <Circle fill="#c4c8cc7d" layoutX="110.0" layoutY="113.0" radius="76.0" stroke="#bcbcbc" strokeWidth="5.0" />
+            <ImageView fitHeight="90.0" fitWidth="122.0" layoutX="49.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/sunsch.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="32.0" layoutY="205.0" prefHeight="21.0" prefWidth="172.0" text="Christ The King Methodist" textFill="#514f4f">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="226.0" text="Sunday School">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton accessibleText="Logout" prefHeight="81.0" prefWidth="230.0" stylesheets="@dashboard.css" text="Log Out" textFill="#f5f4f4">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/baseline_settings_power_white_24dp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton accessibleText="Exit" prefHeight="81.0" prefWidth="230.0" stylesheets="@dashboard.css" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/Exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

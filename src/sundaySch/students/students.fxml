@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1335.0" stylesheets="@../teachers/teachers.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sundaySch.students.StudentsController">
+   <children>
+      <BorderPane prefHeight="645.0" prefWidth="1335.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar fx:id="menuTab" prefHeight="41.0" prefWidth="359.0" style="-fx-background-color: #009688;" BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <JFXTreeTableView fx:id="treeview" editable="true" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+               <columnResizePolicy>
+                  <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </JFXTreeTableView>
+         </center>
+         <right>
+            <AnchorPane prefHeight="589.0" prefWidth="327.0" stylesheets="@../teachers/teachers.css" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField fx:id="searchTxt" focusColor="#009688" labelFloat="true" layoutX="141.0" layoutY="18.0" prefHeight="25.0" prefWidth="155.0" promptText="Enter item for search" />
+                  <Text layoutX="113.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student's Form" wrappingWidth="99.13671875">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="15.0" layoutY="446.0" prefHeight="5.0" prefWidth="295.0" />
+                  <JFXTextField fx:id="nameTxt" focusColor="#009688" labelFloat="true" layoutX="12.0" layoutY="103.0" prefHeight="25.0" prefWidth="168.0" promptText="Name" />
+                  <JFXComboBox fx:id="genderCB" focusColor="#009688" labelFloat="true" layoutX="212.0" layoutY="103.0" prefHeight="25.0" prefWidth="95.0" promptText="Gender" />
+                  <JFXDatePicker fx:id="dobTxt" layoutX="12.0" layoutY="150.0" prefHeight="28.0" prefWidth="133.0" promptText="Date Of Birth" />
+                  <JFXTextField fx:id="mothersTxt" focusColor="#009688" labelFloat="true" layoutX="161.0" layoutY="152.0" prefHeight="25.0" prefWidth="154.0" promptText="Mother's Name" />
+                  <JFXTextField fx:id="mothersNumTxt" focusColor="#009688" labelFloat="true" layoutX="12.0" layoutY="203.0" prefHeight="25.0" prefWidth="132.0" promptText="Mother's Number" />
+                  <JFXTextField fx:id="fathersTxt" focusColor="#009688" labelFloat="true" layoutX="167.0" layoutY="203.0" prefHeight="25.0" prefWidth="144.0" promptText="Father's Name" />
+                  <JFXTextField fx:id="fathersNumTxt" focusColor="#009688" labelFloat="true" layoutX="14.0" layoutY="249.0" prefHeight="25.0" prefWidth="132.0" promptText="Father's Number" />
+                  <JFXTextField fx:id="residenceTxt" focusColor="#009688" labelFloat="true" layoutX="171.0" layoutY="249.0" prefHeight="25.0" prefWidth="144.0" promptText="Residence" />
+                  <JFXComboBox fx:id="classCB" focusColor="#009688" labelFloat="true" layoutX="12.0" layoutY="296.0" prefHeight="25.0" prefWidth="117.0" promptText="Class" />
+                  <JFXComboBox fx:id="schoolCB" focusColor="#009688" labelFloat="true" layoutX="177.0" layoutY="296.0" prefHeight="25.0" prefWidth="117.0" promptText="School" />
+                  <JFXTextField fx:id="nameSchTxt" focusColor="#009688" labelFloat="true" layoutX="14.0" layoutY="344.0" prefHeight="25.0" prefWidth="158.0" promptText="Name of School" />
+                  <JFXTextField fx:id="phoneTxt" focusColor="#009688" labelFloat="true" layoutX="191.0" layoutY="344.0" prefHeight="25.0" prefWidth="132.0" promptText="Phone Number" />
+                  <JFXButton fx:id="saveButtn" layoutX="6.0" layoutY="399.0" onAction="#saveButton" prefHeight="41.0" prefWidth="73.0" text="Save" />
+                  <JFXButton fx:id="clearButtn" layoutX="245.0" layoutY="399.0" onAction="#clearButton" prefHeight="41.0" prefWidth="75.0" text="Clear" />
+                  <Separator layoutX="7.0" layoutY="61.0" prefHeight="5.0" prefWidth="295.0" />
+                  <Text layoutX="45.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" wrappingWidth="50.13671875">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="99.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/search.png" />
+                     </image>
+                  </ImageView>
+                  <ProgressIndicator fx:id="prog" layoutX="136.0" layoutY="453.0" prefHeight="57.0" prefWidth="51.0" progress="0.0" />
+                  <JFXButton fx:id="deleteButton" layoutX="166.0" layoutY="399.0" onAction="#deleteButton" prefHeight="41.0" prefWidth="73.0" text="Delete" />
+                  <JFXButton fx:id="editButton" layoutX="86.0" layoutY="399.0" onAction="#editButton" prefHeight="41.0" prefWidth="73.0" text="Edit" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

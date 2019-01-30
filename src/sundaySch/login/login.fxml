@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="Pane" opacity="0.85" prefWidth="800.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sundaySch.login.LoginController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="460.0" fitWidth="800.0" />
+            <Pane layoutX="469.0" layoutY="54.0" prefHeight="379.0" prefWidth="302.0" style="-fx-background-color: #ffffff67; -fx-background-radius: 100px;">
+               <effect>
+                  <DropShadow color="#8a8888" />
+               </effect>
+               <children>
+                  <Label layoutX="54.0" layoutY="41.0" prefHeight="35.0" prefWidth="211.0" text="CTKMC SUNDAY SCHOOL" textFill="#fffbfb">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="usernameTxt" alignment="CENTER" focusColor="#405aa802" labelFloat="true" layoutX="60.0" layoutY="108.0" prefHeight="43.0" prefWidth="200.0" promptText="USERNAME" style="-fx-border-color: #FFF; -fx-border-radius: 30px;" stylesheets="@login.css" unFocusColor="#c6c6c600">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="30.0" right="10.0" />
+                     </padding>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="passwordTxt" alignment="CENTER" focusColor="#405aa801" labelFloat="true" layoutX="63.0" layoutY="178.0" prefHeight="43.0" prefWidth="200.0" promptText="PASSWORD" style="-fx-border-color: #FFF; -fx-border-radius: 30PX;" stylesheets="@login.css" unFocusColor="#c6c6c600">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </JFXPasswordField>
+                  <JFXButton fx:id="signinButton" layoutX="57.0" layoutY="258.0" onAction="#signin" prefHeight="54.0" prefWidth="211.0" style="-fx-background-radius: 3OPX;" stylesheets="@login.css" text="SIGN IN" textFill="#fffefe" />
+                  <JFXButton layoutX="83.0" layoutY="339.0" prefHeight="23.0" prefWidth="152.0" style="-fx-background-color: transparent; -fx-border-radius: 20px;" text="FORGET PASSWORD" textFill="WHITE" underline="true" />
+               </children>
+            </Pane>
+            <AnchorPane layoutY="-2.0" opacity="0.83" prefHeight="14.0" prefWidth="800.0" style="-fx-background-color: #ffffff67;">
+               <children>
+                  <JFXButton fx:id="exit" layoutX="753.0" layoutY="5.0" onAction="#exit" opacity="0.78" prefHeight="0.0" prefWidth="24.0" style="-fx-background-color: transparent;" text="X" textFill="#fffdfd">
+                     <effect>
+                        <DropShadow color="#837b7b" />
+                     </effect>
+                  </JFXButton>
+                  <Label layoutX="28.0" layoutY="4.0" prefHeight="29.0" prefWidth="217.0" text="CTKMC SUNDAY SCHOOL SYSTEM" textFill="#c3bdbddb">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

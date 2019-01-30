@@ -1,0 +1,20 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.jfx-button{
+    -fx-background-color:#4CAF50;
+    -fx-background-radius: 30px;
+}
+
+.jfx-button2{
+    -fx-background-color: #00BCD4;
+}
+
+.jfx-button:hover{
+  -fx-background-color:#FF6F00;
+}
+.text-field{
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+}

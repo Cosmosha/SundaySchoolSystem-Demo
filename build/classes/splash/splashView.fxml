@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Pane" prefHeight="566.0" prefWidth="717.0" style="-fx-background-color: #00a75f; -fx-background-radius: 100px;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="splash.SplashViewController">
+   <children>
+      <Label fx:id="systemLabel" alignment="CENTER" layoutX="252.0" layoutY="226.0" prefHeight="30.0" prefWidth="224.0" text="SUNDAY SCHOOL SYSTEM" textFill="WHITE" visible="false" wrapText="true">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="message" alignment="CENTER" layoutX="253.0" layoutY="254.0" prefHeight="57.0" prefWidth="230.0" text="                 WELCOME TO                  CHRIST THE KING METHODIST CHURCH CHILDREN'S MINISTRY." textAlignment="CENTER" textFill="WHITE" visible="false" wrapText="true">
+         <font>
+            <Font name="Microsoft YaHei Light" size="12.0" />
+         </font>
+      </Label>
+      <Pane fx:id="spinnerPane" layoutX="277.0" layoutY="316.0" prefHeight="158.0" prefWidth="174.0" visible="false">
+         <children>
+            <JFXSpinner layoutX="53.0" layoutY="23.0" radius="30.0" />
+            <Label alignment="CENTER" layoutX="31.0" layoutY="99.0" prefHeight="38.0" prefWidth="123.0" text="LOADING PLEASE WAIT..." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="logo" layoutX="319.0" layoutY="117.0" prefHeight="91.0" prefWidth="89.0" style="-fx-background-color: #fff; -fx-background-radius: 50px;" text="  CTKMC" textFill="#010d0880" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
